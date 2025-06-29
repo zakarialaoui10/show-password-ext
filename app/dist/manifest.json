@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Unmask",
+  "version": "0.0.1",
+  "description": "Toggle password visibility on all websites",
+  "permissions": ["scripting", "activeTab"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Toggle Password Visibility",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  }
+}

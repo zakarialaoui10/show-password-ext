@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Toggle</title>
+</head>
+<body>
+
+    <input type="password" id="password" placeholder="Enter Password">
+    <button onclick="togglePassword()">Show</button>
+
+    <script>
+        function togglePassword() {
+            const passwordInput = document.getElementById("password");
+            const button = event.target;
+
+            if (passwordInput.type === "password") {
+                passwordInput.type = "text";
+                button.textContent = "Hide";
+            } else {
+                passwordInput.type = "password";
+                button.textContent = "Show";
+            }
+        }
+    </script>
+
+</body>
+</html>
